@@ -14,7 +14,7 @@ function problem1()
     x = 0
     nats = 1:999
     for i in nats
-        if i%3 == 0 || i%5 == 0
+        if i%3==0 || i%5==0
             x += i
         end
     end
