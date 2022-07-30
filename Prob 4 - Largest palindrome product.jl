@@ -33,4 +33,4 @@ function find_largest_pal(thresh, len)
 end
 
 # Since it's two 3-digit numbers, we only need to check up to 999*999 = 998001
-find_largest_pal(998001, 3)
+find_largest_pal(999^2, 3)
