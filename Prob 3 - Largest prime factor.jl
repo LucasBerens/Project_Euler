@@ -20,7 +20,8 @@ function prime_factors(N)
         N = N/2
     end # N is now odd and we have gotten rid of all "2" prime factors
 
-    # Every composite number has a prime factor not greater than its square root: https://proofwiki.org/wiki/Composite_Number_has_Prime_Factor_not_Greater_Than_its_Square_Root
+    # Every composite number has a prime factor not greater than its square root:
+    # https://proofwiki.org/wiki/Composite_Number_has_Prime_Factor_not_Greater_Than_its_Square_Root
     bound = trunc(Int, √N) + 1
     for i in 3:2:bound
         if N%i == 0 
