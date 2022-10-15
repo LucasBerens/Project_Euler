@@ -9,12 +9,12 @@ What is the 10 001st prime number?
 using Printf
 
 function is_prime(num)
-    for i in 2:1:(√num + 1)
-        if num%i == 0
-            return(false)
-        end
+    if num == 2
+        return(true)
     end
-    return(true)
+    for i in 2:1:(√num + 1)
+        return(~(num%i == 0))
+    end
 end
 
 function get_nth_prime(nth)
